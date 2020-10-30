@@ -1,0 +1,18 @@
+package Stock.classes;
+
+public class numberofstock {
+    public static int numberofstock;
+
+    public static int getNumberofstock() {
+        return numberofstock;
+    }
+
+    public static void setNumberofstock(int numberofstock) {
+        if (numberofstock <= 0){
+            Stock.classes.numberofstock.numberofstock =  0;
+        }
+        else{
+            Stock.classes.numberofstock.numberofstock =  numberofstock;
+        }
+    }
+}
